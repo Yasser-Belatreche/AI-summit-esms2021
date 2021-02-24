@@ -870,6 +870,7 @@ body {
     background-color: black;
     color: white;
     /* black */
+    width: 100%;
 }
 
 #sponsors.active {
@@ -878,11 +879,22 @@ body {
 }
 
 #sponsors .sponsors .logos {
-    padding: 40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-#sponsors .sponsors .logos img {
-    height: 300px;
+#sponsors .sponsors .logos .logo {
+    width: 50%;
+    padding: 10px;
+}
+
+#sponsors .sponsors .logos .logo img {
+    width: 100%;
 }
 
 
@@ -1206,7 +1218,10 @@ body {
         max-width: 600px;
         margin: 0px 2px auto;
     }
-    /* speakers section */
+    /* sponsors section */
+    #sponsors .sponsors .logos .logo {
+        width: 25%;
+    }
 }
 
 
@@ -1316,7 +1331,7 @@ body {
     }
     /* sponsor */
     #sponsors .sponsors {
-        max-width: 1300px;
+        width: 100%;
         margin: 0 auto;
     }
     .title-section {
