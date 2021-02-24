@@ -10,7 +10,7 @@ html {
     font-family: 'proxima_novaregular', sans-serif;
     scroll-behavior: smooth;
     letter-spacing: 3px;
-    background-image: url(/img/charte\ graphique.png);
+    background-image: url('./img/charte-graphique.png');
     /* black */
     background-color: black;
     color: white;
@@ -372,9 +372,11 @@ body {
 }
 
 #home .home .event-description p span {
+    display: inline-block;
     color: #000000;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 
 #home.active .home .event-description p span {
@@ -631,6 +633,7 @@ body {
 #speakers .speakers .conference-speakers span.right-control {
     right: 0;
     cursor: pointer;
+    z-index: 40;
 }
 
 #speakers .speakers .conference-speakers span.left-control {
@@ -1044,56 +1047,56 @@ body {
 
 @font-face {
     font-family: 'proxima_nova_altbold';
-    src: url('/fonts/webfontkit-20210222-033406/proxima_nova_alt_bold-webfont.woff2') format('woff2'), url('/fonts/webfontkit-20210222-033406/proxima_nova_alt_bold-webfont.woff') format('woff');
+    src: url('./fonts/webfontkit-20210222-033406/proxima_nova_alt_bold-webfont.woff2') format('woff2'), url('./fonts/webfontkit-20210222-033406/proxima_nova_alt_bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'proxima_nova_altlight';
-    src: url('/fonts/webfontkit-20210222-033406/proxima_nova_alt_light-webfont.woff2') format('woff2'), url('/fonts/webfontkit-20210222-033406/proxima_nova_alt_light-webfont.woff') format('woff');
+    src: url('./fonts/webfontkit-20210222-033406/proxima_nova_alt_light-webfont.woff2') format('woff2'), url('./fonts/webfontkit-20210222-033406/proxima_nova_alt_light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'proxima_nova_altthin';
-    src: url('/fonts/webfontkit-20210222-033406/proxima_nova_alt_thin-webfont.woff2') format('woff2'), url('/fonts/webfontkit-20210222-033406/proxima_nova_alt_thin-webfont.woff') format('woff');
+    src: url('./fonts/webfontkit-20210222-033406/proxima_nova_alt_thin-webfont.woff2') format('woff2'), url('./fonts/webfontkit-20210222-033406/proxima_nova_alt_thin-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'proxima_novablack';
-    src: url('/fonts/webfontkit-20210222-033406/proxima_nova_black-webfont.woff2') format('woff2'), url('/fonts/webfontkit-20210222-033406/proxima_nova_black-webfont.woff') format('woff');
+    src: url('./fonts/webfontkit-20210222-033406/proxima_nova_black-webfont.woff2') format('woff2'), url('./fonts/webfontkit-20210222-033406/proxima_nova_black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'proxima_novabold';
-    src: url('/fonts/webfontkit-20210222-033406/proxima_nova_bold-webfont.woff2') format('woff2'), url('/fonts/webfontkit-20210222-033406/proxima_nova_bold-webfont.woff') format('woff');
+    src: url('./fonts/webfontkit-20210222-033406/proxima_nova_bold-webfont.woff2') format('woff2'), url('./fonts/webfontkit-20210222-033406/proxima_nova_bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'proxima_novaextrabold';
-    src: url('/fonts/webfontkit-20210222-033406/proxima_nova_extrabold-webfont.woff2') format('woff2'), url('/fonts/webfontkit-20210222-033406/proxima_nova_extrabold-webfont.woff') format('woff');
+    src: url('./fonts/webfontkit-20210222-033406/proxima_nova_extrabold-webfont.woff2') format('woff2'), url('./fonts/webfontkit-20210222-033406/proxima_nova_extrabold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'proxima_novathin';
-    src: url('/fonts/webfontkit-20210222-033406/proxima_nova_thin-webfont.woff2') format('woff2'), url('/fonts/webfontkit-20210222-033406/proxima_nova_thin-webfont.woff') format('woff');
+    src: url('./fonts/webfontkit-20210222-033406/proxima_nova_thin-webfont.woff2') format('woff2'), url('./fonts/webfontkit-20210222-033406/proxima_nova_thin-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'proxima_novaregular';
-    src: url('/fonts/webfontkit-20210222-033406/proximanova-regular-webfont.woff2') format('woff2'), url('/fonts/webfontkit-20210222-033406/proximanova-regular-webfont.woff') format('woff');
+    src: url('./fonts/webfontkit-20210222-033406/proximanova-regular-webfont.woff2') format('woff2'), url('./fonts/webfontkit-20210222-033406/proximanova-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -1120,6 +1123,11 @@ body {
     #home .home .event-description p {
         width: 100%;
         padding-left: 70px;
+        font-size: 30px;
+    }
+    #home .home .event-description p span {
+        font-size: 45px;
+        margin-bottom: 10px;
     }
     #home .home .event-description .register-btn {
         margin-left: 70px;
@@ -1237,36 +1245,11 @@ body {
         max-width: 1300px;
         margin: 0 auto;
     }
-    #home .home .event-description p {
-        font-size: 30px;
-    }
-    #home .home .event-description p span {
-        font-size: 40px;
-    }
     #home .home .photo {
         height: 80%;
         width: 60%;
         margin-top: 80px;
         margin: auto;
-    }
-    #home .home .event-description .learn-more {
-        display: block;
-        width: fit-content;
-        padding: 10px 14px;
-        margin-left: 70px;
-        margin-top: 30px;
-        text-decoration: none;
-        font-size: 24px;
-        font-weight: 500;
-        letter-spacing: 3px;
-        color: #233fb9;
-        background-color: transparent;
-        border: 3px solid #233fb9;
-        transition: all .1s ease;
-    }
-    #home .home .event-description .learn-more:hover {
-        color: white;
-        background-color: #233fb9;
     }
     /* about */
     #about .about {
@@ -1279,7 +1262,7 @@ body {
         margin: 0 auto;
         height: fit-content;
     }
-    /*--------------- show and hide th slider in the pc version --------------*/
+    /*--------------- show and hide the slider in the pc version --------------*/
     /*#speakers .speakers .conference-speakers {
         position: static;
         overflow: unset;
