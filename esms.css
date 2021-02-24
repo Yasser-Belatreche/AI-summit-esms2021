@@ -201,14 +201,20 @@ body {
     width: 26px;
     border-radius: 50%;
     right: 42.6%;
+    /* black mode */
     border: 1px solid rgb(0, 0, 0);
     background-color: white;
+    background-image: url('./img/dark-mode-btn1.png');
+    /* black mode */
+    background-position: center center;
+    background-size: cover;
     transition: right .2s ease;
 }
 
 #nav-bar .nav-bar .nav-list ul span.active::after {
     right: 0;
     background-color: black;
+    background-image: url('./img/white-mode-btn1.png');
 }
 
 #nav-bar .nav-bar .nav-list ul span.active {
