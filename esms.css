@@ -10,7 +10,7 @@ html {
     font-family: 'proxima_novaregular', sans-serif;
     scroll-behavior: smooth;
     letter-spacing: 3px;
-    background-image: url("./img/charte\ graphique.png");
+    background-image: url('./img/charte\ graphique.png');
     /* black */
     background-color: black;
     color: white;
@@ -1045,21 +1045,21 @@ body {
 
 @font-face {
     font-family: 'proxima_nova_altbold';
-    src: url('/fonts/webfontkit-20210222-033406/proxima_nova_alt_bold-webfont.woff2') format('woff2'), url('/fonts/webfontkit-20210222-033406/proxima_nova_alt_bold-webfont.woff') format('woff');
+    src: url('./fonts/webfontkit-20210222-033406/proxima_nova_alt_bold-webfont.woff2') format('woff2'), url('./fonts/webfontkit-20210222-033406/proxima_nova_alt_bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'proxima_nova_altlight';
-    src: url('./fonts/webfontkit-20210222-033406/proxima_nova_alt_light-webfont.woff2') format('woff2'), url('/fonts/webfontkit-20210222-033406/proxima_nova_alt_light-webfont.woff') format('woff');
+    src: url('./fonts/webfontkit-20210222-033406/proxima_nova_alt_light-webfont.woff2') format('woff2'), url('./fonts/webfontkit-20210222-033406/proxima_nova_alt_light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'proxima_nova_altthin';
-    src: url('./fonts/webfontkit-20210222-033406/proxima_nova_alt_thin-webfont.woff2') format('woff2'), url('/fonts/webfontkit-20210222-033406/proxima_nova_alt_thin-webfont.woff') format('woff');
+    src: url('./fonts/webfontkit-20210222-033406/proxima_nova_alt_thin-webfont.woff2') format('woff2'), url('./fonts/webfontkit-20210222-033406/proxima_nova_alt_thin-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -1073,28 +1073,28 @@ body {
 
 @font-face {
     font-family: 'proxima_novabold';
-    src: url('./fonts/webfontkit-20210222-033406/proxima_nova_bold-webfont.woff2') format('woff2'), url('/fonts/webfontkit-20210222-033406/proxima_nova_bold-webfont.woff') format('woff');
+    src: url('./fonts/webfontkit-20210222-033406/proxima_nova_bold-webfont.woff2') format('woff2'), url('./fonts/webfontkit-20210222-033406/proxima_nova_bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'proxima_novaextrabold';
-    src: url('./fonts/webfontkit-20210222-033406/proxima_nova_extrabold-webfont.woff2') format('woff2'), url('/fonts/webfontkit-20210222-033406/proxima_nova_extrabold-webfont.woff') format('woff');
+    src: url('./fonts/webfontkit-20210222-033406/proxima_nova_extrabold-webfont.woff2') format('woff2'), url('./fonts/webfontkit-20210222-033406/proxima_nova_extrabold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'proxima_novathin';
-    src: url('./fonts/webfontkit-20210222-033406/proxima_nova_thin-webfont.woff2') format('woff2'), url('/fonts/webfontkit-20210222-033406/proxima_nova_thin-webfont.woff') format('woff');
+    src: url('./fonts/webfontkit-20210222-033406/proxima_nova_thin-webfont.woff2') format('woff2'), url('./fonts/webfontkit-20210222-033406/proxima_nova_thin-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'proxima_novaregular';
-    src: url('./fonts/webfontkit-20210222-033406/proximanova-regular-webfont.woff2') format('woff2'), url('/fonts/webfontkit-20210222-033406/proximanova-regular-webfont.woff') format('woff');
+    src: url('./fonts/webfontkit-20210222-033406/proximanova-regular-webfont.woff2') format('woff2'), url('./fonts/webfontkit-20210222-033406/proximanova-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
