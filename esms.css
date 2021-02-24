@@ -1225,7 +1225,6 @@ body {
         margin: 0 20px;
     }
     #nav-bar .nav-bar .nav-list ul li a {
-        /* color: rgb(0, 0, 0); */
         font-size: 23px;
     }
     #nav-bar .nav-bar .nav-list ul li a::after {
