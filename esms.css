@@ -148,7 +148,7 @@ body {
 
 #nav-bar .nav-list ul li a {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     letter-spacing: 3px;
     position: relative;
@@ -363,23 +363,24 @@ body {
 }
 
 #home .home .event-description {
+    width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding-top: 150px;
     opacity: 0;
     animation: home-p 1s ease .5s forwards;
-    width: 100%;
 }
 
 #home .home .event-description p {
-    text-align: left;
+    text-align: center;
     font-size: 30px;
 }
 
 #home .home .event-description p span {
     display: inline-block;
-    color: #000000;
+    color: rgb(250, 224, 224);
     font-weight: 700;
     font-size: 40px;
     margin-bottom: 10px;
@@ -499,6 +500,12 @@ body {
 
 #about .about .event-description .text {
     margin-top: 20px;
+}
+
+#about .about .event-description .text p {
+    line-height: 30px;
+    font-size: 19px;
+    letter-spacing: 2px;
 }
 
 #about .about .workshops-part .workshops {
@@ -882,7 +889,7 @@ body {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -895,6 +902,18 @@ body {
 
 #sponsors .sponsors .logos .logo img {
     width: 100%;
+}
+
+#sponsors .sponsors .logos .logo.sos-white {
+    display: none;
+}
+
+#sponsors.active .sponsors .logos .logo.sos-white {
+    display: initial;
+}
+
+#sponsors.active .sponsors .logos .logo.sos-black {
+    display: none;
 }
 
 
@@ -1129,6 +1148,10 @@ body {
 /* for the tablette */
 
 @media only screen and (min-width: 768px) {
+    /* nav bar */
+    #nav-bar .nav-list ul li a {
+        font-size: 30px;
+    }
     /* home section */
     #home .home .event-description {
         padding-left: 5%;
@@ -1140,15 +1163,16 @@ body {
     }
     #home .home .event-description p {
         width: 100%;
-        padding-left: 70px;
+        padding-left: 50px;
         font-size: 30px;
+        text-align: left;
     }
     #home .home .event-description p span {
         font-size: 45px;
         margin-bottom: 10px;
     }
     #home .home .event-description .register-btn {
-        margin-left: 70px;
+        margin-left: 50px;
     }
     #home .home .photo {
         height: 70%;
@@ -1189,6 +1213,10 @@ body {
     #about .about .event-description .event-part .text h1 {
         text-align: left;
         padding-left: 20px;
+    }
+    /* speakers section */
+    #speakers .speakers .conference-speakers ul li.current-slide .speaker {
+        margin: 50px;
     }
     /* program */
     #program .program {
@@ -1232,6 +1260,10 @@ body {
     #nav-bar .nav-bar {
         max-width: 1400px;
     }
+    #nav-bar .nav-bar .logo {
+        display: block;
+        margin-right: 90px;
+    }
     #nav-bar .nav-bar .nav-list .hamburger {
         display: none;
     }
@@ -1240,20 +1272,19 @@ body {
         flex-direction: row;
         position: initial;
         background-color: transparent;
-        margin-left: 40px;
     }
     #nav-bar .nav-bar .nav-list ul li {
         margin: 0 20px;
     }
     #nav-bar .nav-bar .nav-list ul li a {
-        font-size: 23px;
+        font-size: 22px;
     }
     #nav-bar .nav-bar .nav-list ul li a::after {
         display: none;
     }
     #nav-bar .nav-bar .nav-list ul span {
-        margin-left: 100px;
-        margin-right: 50px;
+        margin-left: 130px;
+        margin-right: 40px;
         margin-top: 0;
     }
     #nav-bar.active .nav-list ul li a {
@@ -1264,6 +1295,17 @@ body {
         padding-left: 5%;
         max-width: 1300px;
         margin: 0 auto;
+    }
+    #home .home .event-description p {
+        padding-left: 80px;
+        font-size: 30px;
+    }
+    #home .home .event-description p span {
+        font-size: 45px;
+    }
+    #home .home .event-description .register-btn {
+        font-size: 22px;
+        margin-left: 80px;
     }
     #home .home .photo {
         height: 80%;

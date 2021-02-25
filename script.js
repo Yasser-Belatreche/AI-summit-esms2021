@@ -1,3 +1,4 @@
+// -------------------- responsive nav bar ---------------------------
 const hamburger = document.querySelector('.nav-bar .nav-list .hamburger');
 const mobile_menu = document.querySelector('.nav-bar .nav-list ul');
 const menu_item = document.querySelectorAll('.nav-bar .nav-list ul li a');
@@ -6,12 +7,7 @@ const day1 = document.querySelector('#program .program .timing .days .day1');
 const day2 = document.querySelector('#program .program .timing .days .day2');
 const day1_timing = document.querySelector('#program .program .timing .day-1');
 const day2_timing = document.querySelector('#program .program .timing .day-2');
-// const el = document.querySelector("html");
 
-// el.addEventListener("mousemove", (e) => {
-//     el.style.backgroundPositionX = -e.offsetX + "px";
-//     el.style.backgroundPositionY = -e.offsetY + "px";
-// });
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
@@ -23,25 +19,11 @@ menu_item.forEach(item => {
         mobile_menu.classList.toggle('active');
     });
 });
+// -------------------- end responsive nav bar ---------------------------
 
-// document.addEventListener('scroll', () => {
-//     var scroll_position = window.scrollY;
-//     if (scroll_position > 200) {
-//         header.style.backgroundColor = 'black';
-//     } else {
-//         header.style.backgroundColor = 'black';
-//     }
-// });
 
-// day1.addEventListener('click', () => {
-//     day1_timing.style.display = 'block';
-//     day2_timing.style.display = 'none';
-// });
 
-// day2.addEventListener('click', () => {
-//     day1_timing.style.display = 'none';
-//     day2_timing.style.display = 'block';
-// });
+// -------------------- Dark mode -------------------------------
 const dark_mode_btn = document.querySelector('#nav-bar .nav-bar .nav-list ul span');
 const nav_bar = document.querySelector('#nav-bar');
 const nav_bar_hamburger = document.querySelector('#nav-bar .nav-bar .nav-list .hamburger');
@@ -66,15 +48,17 @@ dark_mode_btn.addEventListener('click', () => {
     html.classList.toggle('active');
 });
 
+// -------------------- end Dark mode -------------------------------
 
 
-// ---------------speakers slider----------------
+
+
+// --------------------- speakers slider ---------------------------
 const speaker = document.querySelector('#speakers .speakers .conference-speakers ul');
 const current_speaker = Array.from(speaker.children);
 const nextBtn = document.querySelector('#speakers .speakers .conference-speakers span.right-control');
 const prevBtn = document.querySelector('#speakers .speakers .conference-speakers span.left-control');
 const slide_width = current_speaker[0].getBoundingClientRect().width;
-
 const dotsNav = document.querySelector('#speakers .speakers .conference-speakers .dots');
 const dots = Array.from(dotsNav.children);
 
@@ -110,7 +94,6 @@ const hideShowArrows = (current_speaker, prevBtn, nextBtn, targetIndex) => {
 
 
 
-
 nextBtn.addEventListener('click', e => {
     const current_slide = document.querySelector('.current-slide');
     const next_slide = current_slide.nextElementSibling;
@@ -130,7 +113,6 @@ prevBtn.addEventListener('click', e => {
     const prevDot = current_dot.previousElementSibling;
     const prevIndex = current_speaker.findIndex(slide => slide === prev_slide);
 
-
     moveToSlide(speaker, current_slide, prev_slide);
     update_dots(current_dot, prevDot);
     hideShowArrows(current_speaker, prevBtn, nextBtn, prevIndex);
@@ -148,10 +130,9 @@ dotsNav.addEventListener('click', e => {
     const targetIndex = dots.findIndex(dot => dot === targetDot);
     const targetSlide = current_speaker[targetIndex];
 
-
     moveToSlide(speaker, current_slide, targetSlide);
     update_dots(current_dot, targetDot);
     hideShowArrows(current_speaker, prevBtn, nextBtn, targetIndex);
 });
 
-// ---------------end speakers slider----------------
+// --------------- end speakers slider----------------
