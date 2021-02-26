@@ -437,6 +437,18 @@ body {
     animation: home-mascot 1.3s ease forwards;
 }
 
+#home .home .photo.white-mode {
+    display: none;
+}
+
+#home.active .home .photo.dark-mode {
+    display: none;
+}
+
+#home.active .home .photo.white-mode {
+    display: flex;
+}
+
 #home .home .photo img {
     height: 100%;
     animation: mascot-home-float 2s linear .2s infinite alternate-reverse;
@@ -493,7 +505,7 @@ body {
 }
 
 #about .about .event-description .teaser video {
-    background-color: #233fb9;
+    box-shadow: 0px 0px 5px 0px #24378a;
     width: 100%;
     height: auto;
 }
@@ -806,18 +818,6 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-}
-
-#program .program .photo {
-    height: 40%;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-#program .program .photo img {
-    width: 100%;
-    height: auto;
 }
 
 #program .program .time-container {
@@ -1208,7 +1208,7 @@ body {
         margin: 20px;
     }
     #about .about .event-description .teaser video {
-        width: 70%;
+        width: 90%;
     }
     #about .about .event-description .event-part .text h1 {
         text-align: left;
@@ -1237,12 +1237,9 @@ body {
         width: 100%;
         justify-content: space-around;
     }
-    #program .program .photo img {
-        width: 80%;
-        height: auto;
-    }
     #program .program .day-1,
     #program .program .day-2 {
+        flex: 1;
         max-width: 600px;
         margin: 0px 2px auto;
     }
@@ -1317,6 +1314,9 @@ body {
     #about .about {
         max-width: 1300px;
         margin: 0 auto;
+    }
+    #about .about .event-description .teaser video {
+        width: 80%;
     }
     /* speakers */
     #speakers .speakers {
